@@ -171,5 +171,3 @@ Or You just Copy/Fork Repository To Have the file [app.py](app.py).
 Explore the implementation of the model through an image provided in the project directory. Witness firsthand the capabilities of disease prediction using symptoms.
 
 ---
-
-Feel free to delve into the provided Jupyter Notebook for an in-depth exploration of the code and its functionalities. For those interested in using the model locally, refer to the [app.py](app.py) file and follow the instructions in the documentation. If you have any questions or issues, please reach out to the project maintainers. Happy predicting!
