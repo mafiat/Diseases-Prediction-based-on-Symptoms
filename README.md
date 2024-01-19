@@ -8,7 +8,7 @@ The core of this project lies in a Jupyter Notebook, [Disease Prediction based o
 
 ## Table of Contents
 
-1. [Introduction](introduction)
+1. [Introduction](#introduction)
 2. [Exploratory Data Analysis (EDA)](#eda)
    - [1. Import Dependencies](#dependencies)
    - [2. Load the Dataset](#load-dataset)
