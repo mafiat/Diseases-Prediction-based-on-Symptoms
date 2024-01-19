@@ -154,7 +154,7 @@ Manually test the model with a sample set of symptoms, demonstrating its predict
 
 Utilize the [app.py](app.py) file to allow outsiders to use the model on their local machines. This file enables seamless interaction with the model, providing a user-friendly interface.
 
-PreRequistic :
+Prerequisites: 
 - Load [dataset.csv](Dataset/dataset.csv)
 - Load  [Severity-Symptom.csv](Dataset/Symptom-severity.csv) (Contain the weights of each Symptoms)
 - Load model `model_RFC.joblib` (Replace 'model_RFC.joblib' with your model name)
