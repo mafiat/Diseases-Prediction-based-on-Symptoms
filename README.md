@@ -2,7 +2,6 @@
 
 ![Disease Prediction Basaed on Symptoms](https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/584/244/datas/original.png)
 
-
 ## Overview
 
 The core of this project lies in a Jupyter Notebook, [Disease Prediction based on Symptoms.ipynb](Disease_Prediction_based_on_symptoms.ipynb). This notebook utilizes a Random Forest Classifier (RFC) to make accurate predictions about diseases based on a set of symptoms.
@@ -108,7 +107,6 @@ Implement and evaluate a Multi-Layer Perceptron (MLP) Classifier with a similar 
 
 ![image](https://github.com/amMistic/Diseases-Prediction-based-on-Symptoms/assets/134824444/d72d50f3-c3bc-466a-8642-9b9c17fe8fab)
 
-
 ## Evaluate Models <a name="evaluate-models"></a>
 
 Detailed classification reports are provided for both the Random Forest Classifier and the MLPClassifier.
@@ -135,7 +133,6 @@ Metrics calculated for the MLPClassifier demonstrate its comparable performance.
 - Used Python library `joblib`.
 
 ![image](https://github.com/amMistic/Diseases-Prediction-based-on-Symptoms/assets/134824444/49031765-7de6-4f69-a5ba-c066f0d9a87d)
-
 
 ## Test the Model Manually <a name="test-manually"></a>
 
