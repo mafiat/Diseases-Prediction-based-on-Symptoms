@@ -1,21 +1,25 @@
-#TODO : data append function 
+#TODO : data append function -- > Done
 
 import streamlit as st 
 import pandas as pd
 import numpy as np
 import joblib as jb
-from time import sleep
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
+import streamlit_option_menu as som
 
 # load the model 
 model_RFC = jb.load('model_RFC.joblib')
 
-# slider 
-menu_option = ['Prediction', 'Add Data','Train Model']
 
-# selecte option
-selected_option = st.sidebar.selectbox("Select an Option", menu_option)
+# slider 
+with st.sidebar:
+    # Options
+    menu_option = ['Prediction', 'Add Data','Train Model']
+    
+    # selecte Option
+    selected_option = som.option_menu('Disease Prediction System Based on Symptoms',options= menu_option , icons = ['hospital','database-fill-add','train-front'], menu_icon='bandaid')
+ 
 
 # Prediction page
 if selected_option == 'Prediction':
@@ -238,7 +242,7 @@ elif selected_option == 'Train Model':
         with st.spinner("Loading.."):
             Acc = training_model()
             
-        st.success("Model Trainde Successfully")
+        st.success("Model Trained Successfully")
         st.success(f"The Accuracy of model is: { Acc*100 }")
         
         
