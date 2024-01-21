@@ -4921,3 +4921,6 @@ Psoriasis, skin_rash, joint_pain, skin_peeling, silver_like_dusting, small_dents
 Impetigo, skin_rash, high_fever, blister, red_sore_around_nose, yellow_crust_ooze,,,,,,,,,,,,
 Fungal infection,skin rash,itching,nodal skin eruptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Fungal infection,itching ,skin rash,nodal skin eruptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Impetigo,skin rash,high fever,blister,red sore around nose,yellow crust ooze,0,0,0,0,0,0,0,0,0,0,0,0
+Impetigo,skin rash,high fever,blister,red sore around nose,yellow crust ooze,0,0,0,0,0,0,0,0,0,0,0,0
+Impetigo,yellow crust ooze,red sore around nose,blister,high fever,skin rash,0,0,0,0,0,0,0,0,0,0,0,0

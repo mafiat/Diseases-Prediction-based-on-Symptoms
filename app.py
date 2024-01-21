@@ -139,6 +139,23 @@ elif selected_option == 'Add Data':
         #  Arrange the input in array form
         data = [label,Sym_1,Sym_2,Sym_3,Sym_4,Sym_5,Sym_6,Sym_7,Sym_8,Sym_9,Sym_10,Sym_11,Sym_12,Sym_13,Sym_14,Sym_15,Sym_16,Sym_17]
 
+        # removing white space if have and handling the case error
+        for i in range(1,len(data)):
+            if data[i]!=0:
+                data[i] = str(data[i]).lower().strip()
+        
+        # load the severity dataset
+        severity = pd.read_csv('D:\Diseases Prediction Based on symtomps\Dataset\Symptom-severity.csv')
+        
+        # remove the slash
+        severity['Symptom'] = severity['Symptom'].str.replace("_",' ')
+        
+        # handle unrelated data from the input data
+        target = severity['Symptom'].values
+        for i in data:
+            if i not in target:
+                i = ''
+        
         # load the original data
         dataset = pd.read_csv('D:\Diseases Prediction Based on symtomps\Dataset\dataset.csv')
 
