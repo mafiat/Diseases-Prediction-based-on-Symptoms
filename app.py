@@ -68,7 +68,7 @@ if selected_option == 'Prediction':
                 data[i] = str(data[i]).lower().strip()
 
         # symptom ranking dataset
-        severity = pd.read_csv('D:\Diseases Prediction Based on symtomps\Dataset\Symptom-severity.csv')
+        severity = pd.read_csv('./Dataset/Symptom-severity.csv')
         severity['Symptom'] = severity['Symptom'].str.replace("_"," ")
 
         # load the severity data into array
@@ -145,7 +145,7 @@ elif selected_option == 'Add Data':
                 data[i] = str(data[i]).lower().strip()
         
         # load the severity dataset
-        severity = pd.read_csv('D:\Diseases Prediction Based on symtomps\Dataset\Symptom-severity.csv')
+        severity = pd.read_csv('./Dataset/Symptom-severity.csv')
         
         # remove the slash
         severity['Symptom'] = severity['Symptom'].str.replace("_",' ')
@@ -157,7 +157,7 @@ elif selected_option == 'Add Data':
                 i = ''
         
         # load the original data
-        dataset = pd.read_csv('D:\Diseases Prediction Based on symtomps\Dataset\dataset.csv')
+        dataset = pd.read_csv('./Dataset/dataset.csv')
 
         # convert the input data into DataFrame
         df = pd.DataFrame([data], columns = dataset.columns)
@@ -166,10 +166,10 @@ elif selected_option == 'Add Data':
         dataset = pd.concat([dataset,df],ignore_index= True)
         
         # convert the dataframe into file
-        dataset.to_csv('D:\Diseases Prediction Based on symtomps\Dataset\dataset.csv',mode = 'w', index= False)
+        dataset.to_csv('./Dataset/dataset.csv',mode = 'w', index= False)
         
         # dataset new data  
-        df = pd.read_csv('D:\Diseases Prediction Based on symtomps\Dataset\dataset.csv')
+        df = pd.read_csv('./Dataset/dataset.csv')
         
     # submit the 
     if st.button("Submit"):
@@ -192,7 +192,7 @@ elif selected_option == 'Train Model':
     def training_model():
         
         # dataset 
-        dataset = pd.read_csv('D:\Diseases Prediction Based on symtomps\Dataset\dataset.csv')
+        dataset = pd.read_csv('./Dataset/dataset.csv')
         
         # Remove unwanted stuff
         for col in dataset.columns:
@@ -213,7 +213,7 @@ elif selected_option == 'Train Model':
         
         # Encode the Categorical data
         ## Load the severity file
-        severity = pd.read_csv('D:\Diseases Prediction Based on symtomps\Dataset\Symptom-severity.csv')
+        severity = pd.read_csv('./Dataset/Symptom-severity.csv')
         
         ## remove the slashs from the dataset
         severity['Symptom'] = severity['Symptom'].str.replace('_',' ')
